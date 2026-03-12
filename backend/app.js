@@ -1,8 +1,10 @@
+// Importando as dependências necessárias
 import express from 'express';
 import cors from 'cors';
 
 const app = express();
 
+// Configurando o middleware para lidar com JSON e CORS
 app.use(express.json());
 app.use(cors());
 
@@ -11,11 +13,12 @@ const credentials = {
     senha: '123veloce'
 }
 
+// Rota de teste para verificar se o servidor está funcionando
 app.get('/', (req, res) => {
     res.send("Olá, mundo");
 })
 
-
+// Rota para lidar com o login
 app.post('/login', (req, res) => {
     const { email, senha } = req.body;
 
