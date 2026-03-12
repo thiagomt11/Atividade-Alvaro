@@ -26,8 +26,10 @@ Atividade-Alvaro
 │   └─ index.html
 │
 └─ backend/
-    └─ app.js
-```
+    ├─ app.js
+    ├─ package.json
+    ├─ package-lock.json
+
 
 ## Pré-requisitos
 
