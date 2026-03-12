@@ -5,34 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
     
 <body>
-    <main>
-                <div id="Titulo">
-                    <h1>PROVA SISTEMAS DISTRIBUIDOS</h1>
+    <div class="overlay"></div>
+    <main>    
+        <h1 id="titulo-login">Login</h1>
+        
+        <form action="" method="POST">
+            <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input type="email" id="email" required placeholder="Email">
+            </div>
 
-                    <h2>Bem vindo a tela de Login para a Prova</h2>
-                </div>
+            <div class="input-box">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="senha" required placeholder="Senha">
+            </div>
+        </form>
+          
+        <div id="footer-login">
+            <button type="submit" id="login-btn">LOGIN</button>
+            <a href="https://www.youtube.com/watch?v=rS3lPDJNdiw&pp=ygUUY29tbyByZWRlZmluaXIgc2VuaGHSBwkJxQoBhyohjO8%3D" target="_blank">Redefinir senha</a>
+        </div>
 
-                <div id="Email">
-                    <form action="" method="POST">
-                        <div id="Email"></div>
-                    <p>email</p>
-                    <input type="email" required>
-                </div>
+        <div id="message-container">
+            <div id="message-header">
+                <p>Atenção!</p>
+                <button id="fechar-btn">&times;</button>
+            </div>
+            <hr>
+            <p id="message"></p>
+        </div>
 
-                <div id="Senha">
-                    <p>senha</p>
-                    <input type="password"required>
-                </div>
-                
-        <a href="https://www.youtube.com/" target="_blank"> redefinir senha</a>
-
-        <button>Login</button>
     </main>
-
     <script src="script.js"></script>
 </body>
-
 </html>
